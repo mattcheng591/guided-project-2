@@ -1,6 +1,8 @@
 import Planet from "../models/planetModel.js";
 import Film from "../models/filmModel.js";
 import Character from "../models/characterModel.js";
+import FilmsPlanet from "../models/filmsPlanetsModel.js";
+import FilmsCharacter from "../models/filmsCharactersModel.js";
 
 export const getPlanetById = async (req, res) => {
   try {
@@ -16,7 +18,9 @@ export const getPlanetById = async (req, res) => {
 
 export const getFilmsFromPlanet = async (req, res) => {
     try {
-        const films = await 
+        const film_id = await 
+    } catch (err) {
+        res.status(500).json({ message: "Error fetching films from planet", err });
     }
 };
 
