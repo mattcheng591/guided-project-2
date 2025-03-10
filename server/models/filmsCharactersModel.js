@@ -13,6 +13,10 @@ const filmsCharacterSchema = new mongoose.Schema({
   },
 });
 
-const FilmsCharacter = mongoose.model("FilmsCharacter", filmsCharacterSchema);
+const FilmsCharacter = mongoose.model(
+  "FilmsCharacter",
+  filmsCharacterSchema,
+  "films_characters"
+);
 
 export default FilmsCharacter;
