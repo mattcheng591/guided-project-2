@@ -17,7 +17,7 @@ export const getCharacterById = async (req, res) => {
 export const getFilmFromCharacter= async (req, res) => {
   try {
     const characterFilm = await FilmsCharacter.find({
-      film_id: req.params.id,
+      character_id: req.params.id,
     });
     if (!characterFilm) {
       return res.status(404).json({ message: "characterFilm not found" });
