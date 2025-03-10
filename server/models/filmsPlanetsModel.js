@@ -13,6 +13,6 @@ const filmsPlanetSchema = new mongoose.Schema({
   },
 });
 
-const FilmsPlanet = mongoose.model("FilmsPlanet", planetSchema);
+const FilmsPlanet = mongoose.model("FilmsPlanet", filmsPlanetSchema);
 
 export default FilmsPlanet;

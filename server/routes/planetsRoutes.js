@@ -1,5 +1,9 @@
 import express from "express";
-import { getPlanetById } from "../controllers/planetController.js";
+import {
+  getPlanetById,
+  getFilmsFromPlanet,
+  getCharactersFromPlanet,
+} from "../controllers/planetController.js";
 
 const router = express.Router();
 
