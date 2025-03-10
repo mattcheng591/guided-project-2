@@ -10,7 +10,7 @@ app.use(json());
 app.use(cors());
 
 app.use("/api/planets", planetsRoutes);
-app.use("/api/charcters", charactersRoutes);
+app.use("/api/characters", charactersRoutes);
 app.use("/api/films", filmsRoutes);
 
 export default app;
