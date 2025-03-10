@@ -1,7 +1,7 @@
 import express, { json } from "express";
 
 import planetsRoutes from "../routes/planetsRoutes.js";
-import charactersRoutes from "../routes/characterRoutes.js";
+import charactersRoutes from "../routes/charactersRoutes.js";
 import filmsRoutes from "../routes/filmsRoutes.js";
 import cors from "cors";
 
