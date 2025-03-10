@@ -1,4 +1,5 @@
 import Character from "../models/characterModel.js";
+import FilmsCharacter from "../models/filmsCharactersModel.js";
 
 export const getCharacterById = async (req, res) => {
   try {
@@ -9,5 +10,22 @@ export const getCharacterById = async (req, res) => {
     res.status(200).json(character);
   } catch (err) {
     res.status(500).json({ message: "Error fetching character", err });
+  }
+};
+
+
+export const getFilmFromCharacter= async (req, res) => {
+  try {
+    const characterFilm = await FilmsCharacter.find({
+      film_id: req.params.id,
+    });
+    if (!characterFilm) {
+      return res.status(404).json({ message: "characterFilm not found" });
+    }
+    res.status(200).json(characterFilm);
+  } catch (err) {
+    res
+      .status(500)
+      .json({ message: "Error fetching from films_characters", err });
   }
 };
