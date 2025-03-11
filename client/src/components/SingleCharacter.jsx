@@ -10,7 +10,7 @@ function SingleCharacter(props) {
   };
   return (
     <>
-      <div type="button" onClick={handleClick} className="btn btn-primary">
+      <div type="button" onClick={handleClick} className="button">
         <h5 className="card-title">{props.name}</h5>
       </div>
     </>

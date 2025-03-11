@@ -1,0 +1,91 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Star+Jedi&display=swap');
+
+/* Root Variables */
+:root {
+  --dark1: #000000;
+  --light1: #ffffff;
+  --dark2: #1a1a1a;
+  --light2: #ffcc00; /* Star Wars yellow */
+  --accent1: #ff0000; /* Sith red */
+}
+
+/* Global Styles */
+body {
+  background-color: var(--dark1);
+  color: var(--light1);
+  font-family: 'Star Wars', sans-serif;
+  background-image: url('https://example.com/star-wars-background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  cursor: url('lightsaber.png'), default;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  font-family: 'Star Jedi', sans-serif;
+  color: var(--light2);
+}
+
+/* Buttons and Links */
+.button {
+  background-color: var(--light2); /* Star Wars yellow */
+  color: var(--dark1); /* Black */
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--dark2); /* Dark gray */
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--accent1); /* Sith red */
+  color: var(--light1); /* White */
+}
+
+/* Star Wars Crawl Animation */
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  color: #feda4a;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  top: 9999px;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear;
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg) translateZ(0);
+  }
+  100% {
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+
+/* Additional Styles */
+.heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import "./index.css";
+
 import CharacterList from "./components/CharacterList";
 import CharacterPage from "./components/CharacterPage";
 import FilmPage from "./components/FilmPage";
