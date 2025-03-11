@@ -1,12 +1,11 @@
 import { memo } from "react";
 import { useNavigate } from "react-router-dom";
 
-function SingleCharacter(props) {
+function SingleFilm(props) {
   const navigate = useNavigate();
   console.log(props.id);
   const handleClick = () => {
-    // Navigate to the CharacterPage with the specific character ID
-    navigate(`/character/${props.id}`);
+    // navigate(`/film/${props.id}`);
   };
   return (
     <>
@@ -17,4 +16,4 @@ function SingleCharacter(props) {
   );
 }
 
-export default memo(SingleCharacter);
+export default memo(SingleFilm);
