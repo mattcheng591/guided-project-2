@@ -41,7 +41,11 @@ h1, h2, h3, h4, h5 {
   cursor: pointer;
   display: inline-block;
   text-align: center;
+  width: 225px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  line-height: 30px; /* Center text vertically */
 }
+
 
 .button:hover {
   background-color: var(--accent1); /* Sith red */
