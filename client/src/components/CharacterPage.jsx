@@ -33,7 +33,7 @@ function CharacterPage() {
   return (
     <>
       <div className="container">
-        <div className="card" style={{ width: "400rem" }}>
+        <div className="card star-wars-card" style={{ width: "25rem" }}>
           <div className="card-body">
             <h5 className="card-title">{character[0]?.name}</h5>
             <ul className="list-group">
@@ -46,7 +46,6 @@ function CharacterPage() {
           </div>
         </div>
       </div>
-      <div className="container"></div>
     </>
   );
 }
